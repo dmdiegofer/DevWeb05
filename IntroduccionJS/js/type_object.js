@@ -34,3 +34,12 @@ const {price , name_prod , stock} = product ;
 Object.freeze(product) ; // IT AVOID THAN YOU CAN ADD, DELL OR MOD ANY ATTRIBUTES TO AN OBJ
 Object.isFrozen(product) ; // IT CONSULT IF AN OBJ WAS FREEZE OR NOT 
 Object.seal(product) ; // IT IS THE SAME AS FREEZE BUT IT ALLOWS TO MODIFY
+
+/* SPREAD OPERATOR TO JOIN OBJS */
+features = {
+    height : 51 ,
+    width : 15 ,
+    weight : 50 
+}
+// SYNTAX
+let newObj = { ...product , ...features } ; 
